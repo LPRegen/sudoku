@@ -17,5 +17,7 @@ module.exports = {
   plugins: ["react-refresh"],
   rules: {
     "react-refresh/only-export-components": "warn",
+    "no-console": 2,
+    "@typescript-eslint/no-explicit-any": 2
   },
 };
