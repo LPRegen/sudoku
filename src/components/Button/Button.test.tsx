@@ -18,8 +18,10 @@ describe('Button test', () => {
   });
 
   it('handleClick function is executed correctly on click', async () => {
-    render(<Button handleClick={jest.fn()}>New game</Button>);
+    const handleClick = jest.fn();
+    render(<Button handleClick={handleClick}>New game</Button>);
     const buttonEl = screen.getByRole('button');
     await userEvent.click(buttonEl);
+    expect(handleClick).toHaveBeenCalled();
   });
 });
