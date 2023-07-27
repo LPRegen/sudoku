@@ -2,9 +2,8 @@ import React from 'react';
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   children: string;
-  handleClick: () => void;
 }
 
-export const Button = ({ children, handleClick }: ButtonProps) => {
-  return <button onClick={handleClick}>{children}</button>;
+export const Button = ({ children, ...rest }: ButtonProps) => {
+  return <button {...rest}>{children}</button>;
 };
