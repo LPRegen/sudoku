@@ -24,4 +24,16 @@ describe('Button test', () => {
     await userEvent.click(buttonEl);
     expect(handleClick).toHaveBeenCalled();
   });
+
+  it('handleClick is not executed when the button is disabled', async () => {
+    const handleClick = jest.fn();
+    render(
+      <Button onClick={handleClick} disabled={true}>
+        New Game
+      </Button>
+    );
+    const buttonEl = screen.getByRole('button');
+    await userEvent.click(buttonEl);
+    expect(handleClick).not.toHaveBeenCalled();
+  });
 });
