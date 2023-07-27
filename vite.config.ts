@@ -9,4 +9,11 @@ export default defineConfig({
       src: '/src',
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "./util/styles/_main.scss" as *;`,
+      },
+    },
+  },
 });
