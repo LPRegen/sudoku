@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 
 import { Button } from './Button';
 
-describe('Button test', () => {
+describe('Button', () => {
   it('Renders the component', () => {
     render(<Button>Test</Button>);
     const buttonEl = screen.getByRole('button');
@@ -37,10 +37,10 @@ describe('Button test', () => {
     expect(handleClick).not.toHaveBeenCalled();
   });
 
-  it('Button is focused correctly', () => {
+  it('Button is focused on Tab keypress', async () => {
     render(<Button>New game</Button>);
     const buttonEl = screen.getByRole('button');
-    buttonEl.focus();
+    await userEvent.keyboard('[Tab]');
     expect(buttonEl).toHaveFocus();
   });
 
@@ -49,7 +49,7 @@ describe('Button test', () => {
     render(<Button onClick={handleClick}>New game</Button>);
     const buttonEl = screen.getByRole('button');
     buttonEl.focus();
-    await userEvent.keyboard('{Enter}');
+    await userEvent.keyboard('[Enter]');
     expect(handleClick).toHaveBeenCalled();
   });
 
