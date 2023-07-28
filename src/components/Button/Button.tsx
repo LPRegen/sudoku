@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
-  children: string;
+  children: React.ReactNode;
 }
 
 export const Button = ({ children, ...rest }: ButtonProps) => {
