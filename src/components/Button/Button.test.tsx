@@ -52,4 +52,13 @@ describe('Button test', () => {
     await userEvent.keyboard('{Enter}');
     expect(handleClick).toHaveBeenCalled();
   });
+
+  it('handleClick is executed on Space keypress', async () => {
+    const handleClick = jest.fn();
+    render(<Button onClick={handleClick}>New game</Button>);
+    const buttonEl = screen.getByRole('button');
+    buttonEl.focus();
+    await userEvent.keyboard('[Space]');
+    expect(handleClick).toHaveBeenCalled();
+  });
 });
