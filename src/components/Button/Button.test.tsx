@@ -43,4 +43,13 @@ describe('Button test', () => {
     buttonEl.focus();
     expect(buttonEl).toHaveFocus();
   });
+
+  it('handleClick is executed on Enter keypress', async () => {
+    const handleClick = jest.fn();
+    render(<Button onClick={handleClick}>New game</Button>);
+    const buttonEl = screen.getByRole('button');
+    buttonEl.focus();
+    await userEvent.keyboard('{Enter}');
+    expect(handleClick).toHaveBeenCalled();
+  });
 });
