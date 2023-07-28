@@ -25,6 +25,12 @@ describe('Button', () => {
     expect(handleClick).toHaveBeenCalled();
   });
 
+  it('Disabled button contains `aria-disabled`', () => {
+    render(<Button disabled>New game</Button>);
+    const buttonEl = screen.getByRole('button');
+    expect(buttonEl).toBeDisabled();
+  });
+
   it('handleClick is not executed when the button is disabled', async () => {
     const handleClick = jest.fn();
     render(
