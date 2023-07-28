@@ -8,6 +8,7 @@ describe('Button test', () => {
     render(<Button>Test</Button>);
     const buttonEl = screen.getByRole('button');
     expect(buttonEl).toBeInTheDocument();
+    expect(buttonEl).toBeVisible();
   });
 
   it('Button is correctly aria-labeled', () => {
