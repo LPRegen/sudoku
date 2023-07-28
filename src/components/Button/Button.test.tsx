@@ -36,4 +36,11 @@ describe('Button test', () => {
     await userEvent.click(buttonEl);
     expect(handleClick).not.toHaveBeenCalled();
   });
+
+  it('Button is focused correctly', () => {
+    render(<Button>New game</Button>);
+    const buttonEl = screen.getByRole('button');
+    buttonEl.focus();
+    expect(buttonEl).toHaveFocus();
+  });
 });
