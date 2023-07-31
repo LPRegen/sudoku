@@ -1,6 +1,6 @@
 .btn {
   background-color: $btn-bg;
-  box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+  box-shadow: $shadow;
   border-radius: 10px;
   height: 42px;
   width: 160px;

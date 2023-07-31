@@ -2,3 +2,10 @@
 $btn-bg: #c1e5ff;
 $btn-hover-bg: #76c5ff;
 $btn-focus-border-color: #0d4666;
+
+// Box Shadow
+$shadow: 0 4px 4px
+  rgba(
+    $color: #000000,
+    $alpha: 0.25,
+  );
