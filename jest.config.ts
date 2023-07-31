@@ -5,6 +5,9 @@ const config: Config = {
   verbose: true,
   testEnvironment: 'jest-environment-jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  moduleNameMapper: {
+    '^.+\\.(css|scss)$': '<rootDir>/src/components/mocks/styleMock.js',
+  },
 };
 
 export default config;
