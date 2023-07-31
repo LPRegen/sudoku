@@ -1,0 +1,15 @@
+.btn {
+  background-color: $btn-bg;
+  box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+  border-radius: 10px;
+  height: 42px;
+  width: 160px;
+
+  &:hover {
+    background-color: $btn-hover-bg;
+  }
+
+  &:focus {
+    border-color: $btn-focus-border-color;
+  }
+}
