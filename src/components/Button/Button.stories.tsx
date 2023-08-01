@@ -15,6 +15,7 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
+export const NewGame: Story = {
+  name: 'New game',
   render: () => <Button>New Game</Button>,
 };
