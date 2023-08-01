@@ -4,9 +4,11 @@
   border-radius: 10px;
   height: 42px;
   width: 160px;
+  border: none;
 
   &:hover {
     background-color: $btn-hover-bg;
+    cursor: pointer;
   }
 
   &:focus {
