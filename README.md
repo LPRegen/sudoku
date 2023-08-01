@@ -42,4 +42,6 @@ So basically, I have decided to create my own Sudoku.
 
 - Storybook: allows you to test and visualize components in isolation. Besides the default addons, I'm using the [storybook-addon-a11y](https://github.com/storybookjs/storybook/tree/next/code/addons/a11y), which helps you to ensure that the components are compliant with the Web Content Accessibility Guidelines.
 
+- Chromatic: this tool lets you create a deploy of Storybook.
+
 - React router: routing library used to build single page applications (SPA).
