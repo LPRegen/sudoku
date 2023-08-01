@@ -97,6 +97,9 @@ devDependencies:
   babel-jest:
     specifier: ^29.6.1
     version: 29.6.1(@babel/core@7.22.9)
+  chromatic:
+    specifier: ^6.20.0
+    version: 6.20.0
   eslint:
     specifier: ^8.44.0
     version: 8.44.0
@@ -4878,6 +4881,11 @@ packages:
   /chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
+    dev: true
+
+  /chromatic@6.20.0:
+    resolution: {integrity: sha512-PN00MNAg++kXl9HM4JgTHJAMiJQ+nZYhtmKF+viZ6N//CLN5sZrHK5x5TSj/0z/cMhx2gGtbwgRhLHGGqxpj5w==}
+    hasBin: true
     dev: true
 
   /ci-info@3.8.0:
