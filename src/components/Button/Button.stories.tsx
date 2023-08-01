@@ -19,3 +19,7 @@ export const NewGame: Story = {
   name: 'New game',
   render: () => <Button>New Game</Button>,
 };
+
+export const ResumeGame: Story = {
+  render: () => <Button>Resume game</Button>,
+};
