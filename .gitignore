@@ -24,3 +24,10 @@ dist-ssr
 *.sw?
 
 .eslintcache
+
+# Storybook
+/storybook-static
+migration-storybook.log
+build-storybook.log
+
+
